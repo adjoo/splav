@@ -1,0 +1,57 @@
+//оформление элементов, которые выглядят как кнопки, втч ссылок как кнопки
+
+@use "../base/variables" as *
+
+button, .button
+  display: inline-flex
+  font-size: 1.4rem
+  line-height: 1
+  font-weight: $fs_med
+  align-items: center
+  justify-content: center
+  padding-left: 1em
+  padding-right: 1em
+  text-align: center
+  white-space: nowrap
+.button-svg
+  width: 3em
+  height: 3em
+  border-radius: 1.21em
+  border: 1px solid currentcolor
+  color: $accent
+  padding: 0
+  &:hover, &:active, &:focus
+    border: 1px solid currentcolor
+    color: inherit
+    border-radius: 1.21em
+  svg
+    width: 1.42em
+    height: 1.42em
+
+.button_style_1
+  padding: 1.5rem 4rem
+  color: $bg
+  background-color: $accent
+  border-radius: 2rem
+  &:hover, &:active, &:focus
+    border-radius: 2rem
+    color: $bg
+    background-color: $btnactive
+.button_style_2
+  padding: 1.5rem 4rem
+  color: $accent
+  background-color: $bg
+  border-radius: 2rem
+  border: 1px solid currentColor
+  &:hover, &:active, &:focus
+    border-radius: 2rem
+    color: $bg
+    background-color: $accent
+    border: 1px solid $accent
+
+
+.button_submit
+  width: 100%
+  max-width: 41rem
+  margin-bottom: 1.428em
+

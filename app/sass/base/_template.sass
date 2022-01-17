@@ -1,0 +1,29 @@
+@use "../base/variables" as *
+
+
+/* весь скролбар */
+
+//for Firefox
+html
+  /* "auto" или "thin"  */
+  scrollbar-width: thin
+  /* плашка скролла и дорожка */
+  scrollbar-color: $l-dark $stroke
+
+
+//for Webkit
+::-webkit-scrollbar
+  width: 1.2em
+/* верхняя и нижняя кнопки скролла*/
+::-webkit-scrollbar-button
+  background-color: $l-dark
+/* линия всего скролбара */
+::-webkit-scrollbar-track
+  background: $stroke
+/* ползунок */
+::-webkit-scrollbar-thumb
+  background: $l-dark
+  //border-radius: 10px
+/* нижний угол скролбара где встречаются горизонтальный и вертикальный скролбары */
+::-webkit-scrollbar-corner
+  background-color: $l-dark
