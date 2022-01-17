@@ -8,31 +8,69 @@
 
 .section_1
 .s1_bannerContainer
-  max-width: 165em
   padding: 0
   margin: 0 auto
+  @media (min-width: 1200px)
+    max-width: 165em
+  @media (min-width: 991px)
+    margin-top: $gap15
 .s1_col
   position: relative
-  min-height: clamp(45em, calc(262.7px + 18.9vw ), 58em)
+  overflow: hidden
 .s1_colBanner
   flex: 0 0 53%
   max-width: 53%
+  min-height: clamp(48em, calc(9.76px + 2.941vw), 58em)
+  @media (max-width: 991px)
+    flex: auto
+    max-width: unset
+    min-height: unset
 .s1_colSlider
   flex: 0 0 47%
   max-width: 47%
-.s1_banner, .s1_slider
-  min-height: 100%
-  object-fit: cover
-
-.s1_headers
+  @media (max-width: 991px)
+    flex: auto
+    max-width: unset
+.s1_banner
   position: absolute
-  height: 100%
-  max-width: 75em
+  display: block
   top: 0
+  bottom: 0
+  left: 0
   right: 0
-  padding: 10em 4em
+  min-width: 100%
+  min-height: 100%
+.s1_headers
+  position: relative
+  max-width: 75em
+  padding: 13% 4em
+  margin-left: auto
   color: $bg
-.section_1_headers
+  @media (max-width: 991px)
+    padding: 10% 4em
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: flex-start
+
+.s1_colSlider
+  min-height: 100%
+  overflow: hidden
+.sliderItems
+  position: relative
+  display: flex
+  justify-content: flex-start
+  width: 1000%
+  min-height: 100%
+.sliderItem
+  width: 10%
+  min-height: 100%
+  img
+    min-height: 100%
+    min-width: 100%
+
+
+
 .section_1_description
 .section_2
 .section_3

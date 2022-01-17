@@ -10,8 +10,8 @@
 .header_logoWrapper
   padding: 0
   text-align: left
-  max-width: 49%
-
+  @media (max-width: 575px)
+    flex: 1 1 auto
 .header_navLink
   white-space: nowrap
 .header_navLink
@@ -24,6 +24,7 @@
 .header_phoneWrapper
   display: flex
   align-items: center
+  margin-left: auto
 .header_callButton
   margin-left: $gap15
 .header_phoneNumber

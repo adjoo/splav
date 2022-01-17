@@ -56,6 +56,26 @@ button, .button
     background-color: $col_2
     border: 1px solid $col_2
 
+.button_style_3 //белый текст, белая рамка, без фона, с тенью
+  $fontSize: 1.6rem
+  $paddingX: 1.666em // 20px
+  $minH: 3.16667em
+  $radius: 1.25em //15px
+  $col_1: transparent
+  $col_2: $accent
+  font-size: $fontSize
+  padding: 0 $paddingX
+  min-height: $minH
+  background-color: $col_1
+  border-radius: $radius
+  border: 1px solid currentColor
+  &:hover, &:active, &:focus
+    border-radius: $radius
+    //color: $col_1
+    background-color: $col_2
+    border: 1px solid currentColor
+    box-shadow: 0 .2em 1.5em -.5em currentColor
+
 
 .button_submit
   width: 100%
