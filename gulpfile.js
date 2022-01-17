@@ -92,7 +92,7 @@ function gulp3 (){
 
 
 let syntax        = 'sass'; // Syntax: sass or scss;
-let projectName = 'massage';
+let projectName = 'splav';
 let directory 		= 'app';
 // Определяем константы Gulp
 const { src, dest, parallel, series, watch } = require('gulp');

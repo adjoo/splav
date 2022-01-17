@@ -2,5 +2,30 @@
 @use "../base/variables" as *
 
 .header
+  position: relative
+  min-height: 10em
+  padding-top: 2.6em
+  @media (max-width: 575px)
+    padding: 2.6em $gap15
+.header_logoWrapper
+  padding: 0
+  text-align: left
+  max-width: 49%
 
-
+.header_navLink
+  white-space: nowrap
+.header_navLink
+  margin: 0 $gap15
+.header_nav
+  @media (max-width: 1199px)
+    margin: $gap2
+  @media (max-width: 767px)
+    display: none
+.header_phoneWrapper
+  display: flex
+  align-items: center
+.header_callButton
+  margin-left: $gap15
+.header_phoneNumber
+  @media (max-width: 500px)
+    display: none

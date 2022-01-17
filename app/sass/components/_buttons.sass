@@ -4,16 +4,14 @@
 
 button, .button
   display: inline-flex
-  font-size: 1.4rem
   line-height: 1
-  font-weight: $fs_med
+  font-weight: $fs_regular
   align-items: center
   justify-content: center
-  padding-left: 1em
-  padding-right: 1em
   text-align: center
   white-space: nowrap
-.button-svg
+
+//.button-svg
   width: 3em
   height: 3em
   border-radius: 1.21em
@@ -28,7 +26,7 @@ button, .button
     width: 1.42em
     height: 1.42em
 
-.button_style_1
+//.button_style_1
   padding: 1.5rem 4rem
   color: $bg
   background-color: $accent
@@ -37,17 +35,26 @@ button, .button
     border-radius: 2rem
     color: $bg
     background-color: $btnactive
-.button_style_2
-  padding: 1.5rem 4rem
-  color: $accent
-  background-color: $bg
-  border-radius: 2rem
-  border: 1px solid currentColor
+
+
+.button_style_2 //белый фон, акцентная рамка
+  $fontSize: 1.2rem
+  $paddingX: 1.666em // 20px
+  $minH: 3.16667em
+  $radius: 1.25em //15px
+  $col_1: $bg
+  $col_2: $accent
+  font-size: $fontSize
+  padding: 0 $paddingX
+  min-height: $minH
+  background-color: $col_1
+  border-radius: $radius
+  border: 1px solid $col_2
   &:hover, &:active, &:focus
-    border-radius: 2rem
-    color: $bg
-    background-color: $accent
-    border: 1px solid $accent
+    border-radius: $radius
+    color: $col_1
+    background-color: $col_2
+    border: 1px solid $col_2
 
 
 .button_submit

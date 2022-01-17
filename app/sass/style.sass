@@ -3,260 +3,41 @@
 @use 'utilities' as *
 @use 'components' as *
 @use 'layout' as *
+
 //все стили до рефакторинга здесь
 
 .section_1
-
-.s1_wrapper
-  display: flex
-  flex-direction: column
-  text-align: center
-  .button
-    margin: 0 1rem
-.s1__decoration
-  margin-top: 8em
-  height: 26em
-  width: 100%
-  background-image: url(../img/clouds1st.png), url(../img/image1st-noclouds.png)
-  background-position: 50% 0%, 50% 100%
-  background-repeat: repeat-x, repeat-x
-  background-size: 192em auto, 192em auto
-  @media (max-width: 1199px)
-    margin-top: 2em
-    font-size: calc(0.45px + 0.796vw )
-
-  @media (max-width: 575px)
-    margin-top: 0em
-
-.s1_wrapper
-  @media (max-width: 767px)
-    .h1
-      font-size: 3.6rem
-    .h2_l, .h2
-      font-size: 2.4rem
-  @media (max-width: 450px)
-    .h1
-      font-size: 3rem
-    .h2_l, .h2
-      font-size: 1.8rem
-
-.section_2
-  padding-top: 0
-  background: url(../img/bg_s3.png) right bottom no-repeat
-.s2_list
-  display: flex
-  justify-content: space-between
-  flex-wrap: wrap
-  margin: -1rem -1rem 7rem
-.s2_list__item
-  flex: 1 1 18%
-  margin: 1rem
-  min-width: 18rem
-  div > span
-    margin-right: 1rem
-.s2_list.v2
-  .s2_list__item
-    max-width: 45%
-    @media (max-width: 767px)
-      min-width: 12rem
-      flex-basis: 35%
-
-.section_headers
-  display: flex
-  flex-direction: column
-  max-width: 80ch
-.s2_description
-.s2_item
-  display: flex
-  align-items: flex-start
-  p
-    max-width: 36ch
-.s2_certificates
+.s1_bannerContainer
+  max-width: 165em
   padding: 0
-  div
-    display: inline-block
-    width: 49%
-    padding: 1.5rem
-    img
-      box-shadow: 4px 4px 30px rgba(148, 176, 192, 0.17)
+  margin: 0 auto
+.s1_col
+  position: relative
+  min-height: clamp(45em, calc(262.7px + 18.9vw ), 58em)
+.s1_colBanner
+  flex: 0 0 53%
+  max-width: 53%
+.s1_colSlider
+  flex: 0 0 47%
+  max-width: 47%
+.s1_banner, .s1_slider
+  min-height: 100%
+  object-fit: cover
+
+.s1_headers
+  position: absolute
+  height: 100%
+  max-width: 75em
+  top: 0
+  right: 0
+  padding: 10em 4em
+  color: $bg
+.section_1_headers
+.section_1_description
+.section_2
 .section_3
-  padding-bottom: 14rem
-  background: url(../img/bg_s4.png) center bottom no-repeat
-  @media (max-width: 991px)
-    padding-bottom: 2rem
-.s3_item
-  display: flex
-  align-items: flex-start
-  .h5
-    white-space: nowrap
-.s3_list
-  display: flex
-  flex-direction: column
-.s3_list__item
-  display: flex
-  align-items: center
-
-.s4_list
-  display: flex
-  flex-wrap: wrap
-  margin: -1rem
-  @media (max-width: 991px)
-    padding: 2rem 0
-.s4_list__item
-  display: flex
-  flex: 1 1 40%
-  align-items: flex-start
-  max-width: 41rem
-  min-width: 29rem
-  margin: 1rem 1rem 6rem
-  @media (max-width: 991px)
-    margin: 1rem 1rem
-  p
-    max-width: 31rem
-
+.section_4
 .section_5
-  &:after
-    display: block
-    content: ''
-    position: relative
-    height: 37rem
-    width: 192rem
-    left: 50%
-    margin-left: -50vw
-    margin-top: -33rem
-    background: url(../img/bg_s6.png) center center no-repeat
-.s5_list
-  display: flex
-  flex-wrap: wrap
-  margin: -1rem
-  @media (max-width: 991px)
-    padding: 2rem 0
-.s5_list__item
-  display: flex
-  align-items: center
-  flex: 1 1 40%
-  max-width: 38rem
-  min-width: 29rem
-  margin: 1rem 1rem 4rem
-  @media (max-width: 991px)
-    margin: 1rem 1rem
 .section_6
-  &:after
-    display: block
-    content: ''
-    position: relative
-    height: 53rem
-    margin-bottom: -33rem
-    width: 192rem
-    left: 50%
-    margin-left: -50vw
-    margin-top: -20rem
-    background: url(../img/bg_s7.png) center center no-repeat
-    @media (max-width: 991px)
-      margin-bottom: -13rem
-      margin-top: -40rem
-.s6_list
-  display: flex
-  flex-wrap: wrap
-  margin: -1rem
-  @media (max-width: 991px)
-    padding: 2rem 0
-.s6_list__item
-  display: flex
-  align-items: flex-start
-  flex: 1 1 40%
-  //max-width: 41rem
-  min-width: 29rem
-  margin: 1rem 1rem 4rem
-  @media (max-width: 991px)
-    margin: 1rem 1rem
-
 .section_7
-  .section_headers
-    max-width: 100%
-.s7__item
-  margin: 1rem auto 1rem 0
-  max-width: 38rem
-
-.s8_list
-  display: flex
-  flex-wrap: wrap
-  margin: -1rem
-  @media (max-width: 991px)
-    padding: 2rem 0
-.s8_list__item
-  display: flex
-  align-items: center
-  flex: 1 1 40%
-  max-width: 38rem
-  min-width: 29rem
-  margin: 1rem 1rem 4rem
-  @media (max-width: 991px)
-    margin: 1rem 1rem
-
-
-.section_9
-  .section_headers
-    max-width: 100%
-.s9__item
-  margin: 1rem auto 1rem 0
-  max-width: 38rem
-.section_9
-  &:after
-    display: block
-    content: ''
-    position: relative
-    height: 37rem
-    width: 192rem
-    left: 50%
-    margin-left: -50vw
-    margin-top: -38rem
-    background: url(../img/bg_s10.png) center center no-repeat
-
-.section_10
-  background: url(../img/bg_s11.png) center bottom no-repeat
-  @media (max-width: 991px)
-    background: url(../img/bg_s11.png) left bottom no-repeat
-.s10_list
-  display: flex
-  flex-wrap: wrap
-  margin: -1rem
-  @media (max-width: 991px)
-    padding: 2rem 0
-.s10_list__item
-  display: flex
-  align-items: center
-  flex: 1 1 40%
-  max-width: 38rem
-  min-width: 29rem
-  margin: 1rem 1rem 4rem
-  @media (max-width: 991px)
-    margin: 1rem 1rem
-
-.section_11
-  .section_headers
-    max-width: 100%
-  &:after
-    display: block
-    content: ''
-    position: absolute
-    height: 53rem
-    width: 192rem
-    right: 50%
-    margin-right: -50vw
-    bottom: -12rem
-    background: url(../img/bg_s12.png) center center no-repeat
-
-.s11__item
-  margin: 1rem auto 1rem 0
-.s11__item_header
-  display: flex
-  align-items: center
-
-.section_12
-  padding-bottom: 0
-  .s1__decoration
-    margin-top: 0
-.s12__item
-  display: flex
-  align-items: center
+.section_8
