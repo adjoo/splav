@@ -81,7 +81,7 @@ $(document).ready(function () {
     });
 
     //несколько каруселей картинок на странице
-    const sliderContainersClasses = ['.s1','.s3']; //корневой элемент карусели (секция)
+    const sliderContainersClasses = ['.section_1','.s3']; //корневой элемент карусели (секция)
     const sliderWrapperClass = '.jsSliderWr'; //класс карусели
     const sliderButtonPrevClass = '.jsSliderPrevBtn'; //класс кнопки назад
     const sliderButtonNextClass = '.jsSliderNextBtn'; // и вперед

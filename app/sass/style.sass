@@ -10,9 +10,13 @@
 .s1_bannerContainer
   padding: 0
   margin: 0 auto
-  @media (min-width: 1200px)
+  @media (min-width: 1359px)
+    max-width: 133em
+  @media (min-width: 1499px)
+    max-width: 146em
+  @media (min-width: 1700px)
     max-width: 165em
-  @media (min-width: 991px)
+  @media (max-width: 991px)
     margin-top: $gap15
 .s1_col
   position: relative
@@ -45,7 +49,6 @@
   max-width: 75em
   padding: 13% 4em
   margin-left: auto
-  color: $bg
   @media (max-width: 991px)
     padding: 10% 4em
     display: flex
@@ -69,9 +72,31 @@
     min-height: 100%
     min-width: 100%
 
+.s1_description
+  margin-top: -7em
+.s1_descrItems
+  flex-grow: 9
+  display: flex
+  justify-content: space-around
+  align-items: stretch
+  background-color: $bg
+  box-shadow: 0px 10px 25px rgba(22, 34, 42, 0.07)
+  padding: 2.5em
+  max-width: 115em
+  @media (max-width: 991px)
+    padding: 1.5em
+    flex-wrap: wrap
 
+.s1_descrItem
+  padding: $gap1
+  @media (max-width: 991px)
+    flex-basis: 40%
+.s1_sliderButtons
+  display: flex
+  justify-content: center
+.s1_sliderBtn
+  margin: 1em .5em
 
-.section_1_description
 .section_2
 .section_3
 .section_4
