@@ -55,7 +55,6 @@
     flex-direction: column
     justify-content: space-between
     align-items: flex-start
-
 .s1_colSlider
   min-height: 100%
   overflow: hidden
@@ -71,9 +70,9 @@
   img
     min-height: 100%
     min-width: 100%
-
 .s1_description
   margin-top: -7em
+  margin-bottom: -2em
 .s1_descrItems
   flex-grow: 9
   display: flex
@@ -83,10 +82,11 @@
   box-shadow: 0px 10px 25px rgba(22, 34, 42, 0.07)
   padding: 2.5em
   max-width: 115em
+  @media (max-width: 1329px)
+    margin-left: 2em
   @media (max-width: 991px)
     padding: 1.5em
     flex-wrap: wrap
-
 .s1_descrItem
   padding: $gap1
   @media (max-width: 991px)
@@ -98,8 +98,88 @@
   margin: 1em .5em
 
 .section_2
+.s2_videoWrapper
+  position: relative
+  padding-left: 0
+  max-width: 63em
+  margin: auto
+  &:before
+    display: block
+    content: ''
+    padding-top: 56.35%
+.s2_playVideoButton
+  position: absolute
+  z-index: 1
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+.s2_video
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+.s2_textCol
+  padding-left: 5rem
+  @media (max-width: 1329px)
+    padding-left: 15px
+.s2_title
+  margin: 2em 0 3em
+  @media (max-width: 1329px)
+    margin: 2em 0 1em
+.s2_body
+  display: flex
+  @media (max-width: 1199px)
+    flex-wrap: wrap
+.s2_person
+  display: flex
+  max-width: 27em
+  margin: 2em 1em 1em 0
+
+.s2_person__photo
+  min-width: 9.5em
+  max-width: 9.5em
+  height: 12em
+  img
+    min-width: 100%
+    min-height: 100%
+
+
 .section_3
+.s3_item
+  max-width: 38em
 .section_4
+.s4_item
+  position: relative
+  min-height: 20em
+  padding: 2em 1em 2em 2em
+  margin: 1.5em auto
+  background-color: $bg
+  border: 1px solid $stroke
+  display: flex
+  flex-direction: column
+  cursor: pointer
+.s4_item__title
+
+.s4_item__tags
+  margin-top: 1em
+.s4_item__tag
+  display: inline-block
+  margin: 0 .2em .4em 0
+  white-space: nowrap
+  border-radius: .583em
+  border: 1px solid $stroke
+  padding: .583em .833em
+  color: $l_dark
+.s4_item__order
+  margin-top: auto
+.s4_item:hover
+  background-color: $accent
+  border-color: $accent
+  *
+    color: $bg!important
+    border-color: currentColor
+
 .section_5
 .section_6
 .section_7

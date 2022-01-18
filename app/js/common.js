@@ -1,5 +1,29 @@
 $(document).ready(function () {
 
+    //lazy image
+    const lazyImageClassName = '.js_lazy_image';
+    const lazyImageSrcAttr = 'data-src';
+    setTimeout(function(){
+        $(window).trigger('scroll');
+    }, 0);
+    $(window).scroll( function() {
+        let winScrollVal = $(this).scrollTop() + $(this).height(); //высота до низа окна
+        let targetPos;//позиция цели
+        let targetAttr;
+        $(lazyImageClassName).each(function() {
+            targetPos = $(this).offset().top;
+            if (targetPos < winScrollVal) {
+                //сработает когда пользователь доскроллит к элементу с классом .lazy
+                targetAttr = $(this).attr(lazyImageSrcAttr);
+                $(this).removeAttr(lazyImageSrcAttr);
+                $(this).removeClass(lazyImageClassName);
+                $(this).attr('src', targetAttr);
+
+            }
+        });
+    });
+
+
     //маска ввода номера телефона
     $(function () {
         $("input[name=phone]").mask("+7 (999) 999-99-99");
