@@ -7,26 +7,36 @@
   padding-top: 2.6em
   @media (max-width: 575px)
     padding: 2.6em $gap15
+
 .header_logoWrapper
-  padding: 0
-  text-align: left
-  @media (max-width: 575px)
-    flex: 1 1 auto
+  padding: 0 1.5em
+.header_navWrapper
+  margin: 0 auto
+  padding: 0 1.5em
+  @media (max-width: 1329px)
+    order: 2
+    margin: 2em auto
+  @media (max-width: 767px)
+    display: none
+
+.header_phoneWrapper
+  margin-left: auto
+  padding: 0 1.5em
+
 .header_navLink
   white-space: nowrap
 .header_navLink
   margin: 0 $gap15
 .header_nav
-  @media (max-width: 1199px)
-    margin: $gap2
+  white-space: nowrap
   @media (max-width: 767px)
     display: none
 .header_phoneWrapper
   display: flex
   align-items: center
-  margin-left: auto
 .header_callButton
   margin-left: $gap15
 .header_phoneNumber
+  white-space: nowrap
   @media (max-width: 500px)
     display: none

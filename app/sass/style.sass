@@ -152,6 +152,7 @@
 .s4_item
   position: relative
   min-height: 20em
+  height: calc(100% - 3em)
   padding: 2em 1em 2em 2em
   margin: 1.5em auto
   background-color: $bg
@@ -159,8 +160,9 @@
   display: flex
   flex-direction: column
   cursor: pointer
+  @media (max-width: 991px)
+    min-height: 18em
 .s4_item__title
-
 .s4_item__tags
   margin-top: 1em
 .s4_item__tag
@@ -173,6 +175,7 @@
   color: $l_dark
 .s4_item__order
   margin-top: auto
+  padding-top: 1em
 .s4_item:hover
   background-color: $accent
   border-color: $accent
@@ -181,6 +184,108 @@
     border-color: currentColor
 
 .section_5
+.s5_title
+  margin-bottom: .5em
+.s5_item
+  position: relative
+  height: calc(100% - 3em)
+  margin: 1.5em auto
+  background-color: $bg
+.s5_item__pic
+  position: relative
+  width: 100%
+  &:before
+    display: block
+    content: ''
+    padding-top: 62.67%
+  img
+    position: absolute
+    min-height: 100%
+    min-width: 100%
+    top: 0
+    left: 0
+.s5_item__onHover
+  position: absolute
+  width: 100%
+  height: 100%
+  z-index: 1
+  top: 0
+  left: 0
+  opacity: 0
+  color: $bg
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  &:before
+    position: absolute
+    display: block
+    content: ''
+    z-index: -1
+    opacity: .8
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    background-color: $accent
+.s5_item__pic:hover
+  .s5_item__onHover
+    opacity: 1
+
 .section_6
+.s6_title
+
+.s6_item
+  position: relative
+  height: calc(100% - 3em)
+  background-color: $bg
+.s6_item__pic
+  position: relative
+  width: 100%
+  &:before
+    display: block
+    content: ''
+    padding-top: 58%
+  img
+    position: absolute
+    min-height: 100%
+    min-width: 100%
+    top: 0
+    left: 0
+.s6_gridContainer
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+  grid-column-gap: $gap3
+  grid-row-gap: $gap2
+  grid-auto-flow: row dense
+  @media (max-width: 1199px)
+    grid-template-columns:  1fr 1fr 1fr
+  @media (max-width: 991px)
+    grid-template-columns:  1fr 1fr
+.s6_gridItem
+
+.s6_gridItemX2
+  grid-row: span 2
+  grid-column: span 2
+  .s6_item__pic:before
+    padding-top: calc(425 / 630 * 100%) //высота большой картинки
 .section_7
+.s7_item
+  margin: $gap15 auto
+
 .section_8
+.s8_item
+  display: flex
+  align-items: center
+  margin: $gap15 auto
+  white-space: nowrap
+  img
+    min-width: 4.8em
+.section_9
+.s9_item
+  padding: 1em
+  margin: 1em auto
+  border: 1px solid $stroke
+
+
+
