@@ -47,7 +47,7 @@
 .s1_headers
   position: relative
   max-width: 75em
-  padding: 13% 4em
+  padding: 7% 4em 14%
   margin-left: auto
   @media (max-width: 991px)
     padding: 10% 4em
@@ -57,13 +57,28 @@
     align-items: flex-start
 .s1_colSlider
   min-height: 100%
+.jsSliderWr
+  position: relative
   overflow: hidden
+
 .sliderItems
   position: relative
   display: flex
   justify-content: flex-start
   width: 1000%
   min-height: 100%
+  @media (max-width: 991px)
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+.jsSliderWr:before
+  @media (max-width: 991px)
+    display: block
+    content: ''
+    padding-top: 56%
+
+
 .sliderItem
   width: 10%
   min-height: 100%

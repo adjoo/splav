@@ -26,15 +26,27 @@ button, .button
     width: 1.42em
     height: 1.42em
 
-//.button_style_1
-  padding: 1.5rem 4rem
-  color: $bg
-  background-color: $accent
-  border-radius: 2rem
+.button_style_1 //акцентный фон, белый текст
+  $fontSize: 1.8rem
+  $paddingX: 2.9em
+  $minH: 2.9em // 53px
+  $radius: 0.83333em //15px
+  $col_1: $white
+  $col_2: $accent
+  $col_3: $gradient
+  font-size: $fontSize
+  padding: 0 $paddingX
+  min-height: $minH
+  background: $col_2
+  border-radius: $radius
+  color: $col_1
+  border: 1px solid $col_2
   &:hover, &:active, &:focus
-    border-radius: 2rem
-    color: $bg
-    background-color: $btnactive
+    border-radius: $radius
+    color: $col_1
+    background: $accent_dark
+    border: 1px solid $col_2
+    box-shadow: 0 .2em 1.5em -.8em $col_2
 
 
 .button_style_2 //белый фон, акцентная рамка
@@ -107,7 +119,7 @@ button, .button
     transform: scale(-1)
 
 
-.playVideoButton
+.playVideoButton, .playVideoButton:focus
   $fontSize: 1rem
   $w: 10.2em // 102px
   $h: 10.2em

@@ -34,82 +34,24 @@
             <div class="header_logoWrapper"><img src="img/logo.png" alt="Splav"></div>
             <div class="header_navWrapper">
                 <nav class="header_nav">
-                    <a href="" class="scroll header_navLink a transition"><span class="h5">О компании</span></a>
-                    <a href="" class="scroll header_navLink a transition"><span class="h5">Услуги</span></a>
-                    <a href="" class="scroll header_navLink a transition"><span
+                    <a href="#about_us" class="js_scroll header_navLink a transition"><span class="h5">О компании</span></a>
+                    <a href="#services" class="js_scroll header_navLink a transition"><span class="h5">Услуги</span></a>
+                    <a href="#catalog" class="js_scroll header_navLink a transition"><span
                             class="h5">Каталог техники</span></a>
-                    <a href="" class="scroll header_navLink a transition"><span
+                    <a href="#cases" class="js_scroll header_navLink a transition"><span
                             class="h5">Выполненные контракты</span></a>
-                    <a href="" class="scroll header_navLink a transition"><span class="h5">Контакты</span></a>
                 </nav>
             </div>
             <div class="header_phoneWrapper">
                 <div class="header_phoneNumber"><span class="h3">+7 (999) 150 46-56</span></div>
                 <div class="header_callButton">
-                    <a href="" class="popup button button_style_2 transition">Заказать звонок</a>
+                    <a href="#popup_form" link_name="кнопка Заказать звонок в Шапке сайта"
+                       class="popup button button_style_2 transition">Заказать звонок</a>
                 </div>
             </div>
         </div>
-
     </div>
 </header>
-
-<div class="popup_windows">
-
-    <div class="popup_window mfp-hide" id="popup_form_small">
-        <div class="popup_window__title ">
-            <span class="h3">Заказ<br> обратного звонка</span>
-        </div>
-        <form action="" class="mt-3 js_form_ajax_post">
-            <label for="popup_small_name" class="input_style_1 mb-5 transition_slow">
-                <span>Имя</span>
-                <input type="text" id="popup_small_name" name="name" placeholder="Константин" class="input" required>
-            </label>
-            <label for="popup_small_phone" class="input_style_1 mb-5 transition_slow">
-                <span>Телефон</span>
-                <input type="text" id="popup_small_phone" name="phone" placeholder="+7 (987) 654-32-10" class="input"
-                       required
-                       autocomplete="off">
-            </label>
-            <input type="hidden" value="Форма Заказать звонок" name="where">
-            <input type="submit" value="Заказать звонок" class="button_submit button button_style_1 transition_slow">
-            <p class="description">Нажимая «Заказать звонок», вы даёте согласие на 
-                <a href="#" class="a  transition">обработку персональных данных </a></p>
-        </form>
-    </div>
-
-    <div class="popup_window mfp-hide" id="popup_form_big">
-        <div class="popup_window__title">
-            <span class="h3">Оставьте заявку<br> и мы свяжемся с вами</span>
-        </div>
-        <form action="" class="mt-3 js_form_ajax_post">
-            <label for="popup_big_name" class="input_style_1 mb-5 transition_slow">
-                <span>Имя</span>
-                <input type="text" id="popup_big_name" name="name" placeholder="Константин" class="input" required>
-            </label>
-            <label for="popup_big_phone" class="input_style_1 mb-5 transition_slow">
-                <span>Телефон</span>
-                <input type="text" id="popup_big_phone" name="phone" placeholder="+7 (987) 654-32-10" class="input"
-                       required
-                       autocomplete="off">
-            </label>
-            <label for="popup_big_email" class="input_style_1 mb-5 transition_slow">
-                <span>Email</span>
-                <input type="text" id="popup_big_email" name="email" placeholder="pgg@vk.com" class="input" required>
-            </label>
-            <input type="hidden" value="Форма Оставить заявку" name="where">
-            <input type="submit" value="Оставить заявку" class="button_submit button button_style_1 transition_slow">
-            <p class="description">Нажимая «Заказать звонок», вы даёте согласие на 
-                <a href="#" class="a  transition">обработку персональных данных </a></p>
-        </form>
-    </div>
-
-    <div class="popup_window mfp-hide" id="js_popup_greeting">
-        <div class="js_popup_message_success h3">Спасибо за заявку!</div>
-        <div class="js_popup_message_fail h3">Попробуйте позднее</div>
-    </div>
-
-</div>
 
 <main class="main">
     <section class="section section_1">
@@ -119,9 +61,10 @@
                 <div class="s1_headers accent-white">
                     <h1 class="h1 mb-4">Комплексные работы </h1>
                     <h2 class="h2 mb-4">по благоустройству территорий</h2>
-                    <h5 class="h5 mb-xl-5 mb-4">Безусловно, курс на социально-ориентированный национальный проект
-                        способствует повышению качества анализа существующих паттернов поведения.</h5>
-                    <a href="" class="mt-2 mb-4 button button_style_3 transition">Обсудить проект</a>
+                    <p class="h5 mb-xl-5 mb-4">Безусловно, курс на социально-ориентированный национальный проект
+                        способствует повышению качества анализа существующих паттернов поведения.</p>
+                    <a href="#popup_form" link_name="кнопка Обсудить проект" class="popup mt-2 mb-4 button button_style_3 transition">Обсудить
+                        проект</a>
                 </div>
             </div>
             <div class="s1_col s1_colSlider jsSliderWr">
@@ -179,10 +122,10 @@
 
     </section>
 
-    <section class="section section_2">
-        <div class="container">
+    <section id="about_us" class="section section_2">
+        <div class="container p-0">
             <div class="row">
-                <div class="col-xl-6 col-12 pl-lg-0">
+                <div class="col-xl-6 col-12">
                     <div class="s2_videoWrapper r_corners">
                         <button class="playVideoButton s2_playVideoButton transition_fast">
                             <svg width="36" height="40" viewBox="0 0 36 40" fill="none"
@@ -227,8 +170,8 @@
         </div>
     </section>
 
-    <section class="section section_3">
-        <div class="container">
+    <section id="" class="section section_3">
+        <div class="container p-0">
             <div class="row">
                 <div class="col-xl-3 col-md-6 col-12">
                     <div class="s3_item">
@@ -271,7 +214,7 @@
                         <div class="d-flex align-items-center mb-3">
                             <div class="marker marker-s1">
                                 <img src="img/svg/icon_reputation.svg" alt="">
-                            </svg>
+                                </svg>
                             </div>
                             <h5 class="h5">Имя и безупречная<br>репутация</h5>
                         </div>
@@ -282,7 +225,7 @@
         </div>
     </section>
 
-    <section class="section section_4">
+    <section id="services"  class="section section_4">
         <div class="container p-0">
             <div class="row align-items-stretch">
                 <div class="col-12 mb-2">
@@ -290,7 +233,7 @@
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-12 col-12 ">
                     <div class="s4_item r_corners transition_slow">
-                        <a href="" class="link_on_element"></a>
+                        <a href="#popup_form" link_name="заказать Очистку территории" class="popup link_on_element"></a>
                         <h3 class="h3 s4_item__title">Очистка территории </h3>
                         <div class="s4_item__tags">
                             <span class="s4_item__tag description">Вырубка деревьев</span>
@@ -306,7 +249,8 @@
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-7 ">
                     <div class="s4_item r_corners transition_slow">
-                        <a href="" class="link_on_element"></a>
+                        <a href="#popup_form" link_name="заказать Подведение коммуникаций"
+                           class="popup link_on_element"></a>
                         <h3 class="h3 s4_item__title">Подведение коммуникаций</h3>
                         <div class="s4_item__tags">
                             <span class="s4_item__tag description">Водоснабжение</span>
@@ -321,7 +265,8 @@
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-6 col-5 ">
                     <div class="s4_item r_corners transition_slow">
-                        <a href="" class="link_on_element"></a>
+                        <a href="#popup_form" link_name="заказать Устройство покрытий"
+                           class="popup link_on_element"></a>
                         <h3 class="h3 s4_item__title">Устройство покрытий</h3>
                         <div class="s4_item__tags">
                             <span class="s4_item__tag description">Асфальт</span>
@@ -336,7 +281,7 @@
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-6 col-5 ">
                     <div class="s4_item r_corners transition_slow">
-                        <a href="" class="link_on_element"></a>
+                        <a href="#popup_form" link_name="заказать Содержание дорог" class="popup link_on_element"></a>
                         <h3 class="h3 s4_item__title">Содержание дорог </h3>
                         <div class="s4_item__tags">
                             <span class="s4_item__tag description">Уборка</span>
@@ -351,7 +296,7 @@
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-6 col-7 ">
                     <div class="s4_item r_corners transition_slow">
-                        <a href="" class="link_on_element"></a>
+                        <a href="#popup_form" link_name="заказать Монтаж МАФов" class="popup link_on_element"></a>
                         <h3 class="h3 s4_item__title">Монтаж МАФов</h3>
                         <div class="s4_item__tags">
                             <span class="s4_item__tag description">Скамейки</span>
@@ -365,7 +310,7 @@
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-7 ">
                     <div class="s4_item r_corners transition_slow">
-                        <a href="" class="link_on_element"></a>
+                        <a href="#popup_form" link_name="заказать Монтаж освещения" class="popup link_on_element"></a>
                         <h3 class="h3 s4_item__title">Монтаж освещения</h3>
                         <div class="s4_item__tags">
                             <span class="s4_item__tag description">Светильники</span>
@@ -379,7 +324,8 @@
                 </div>
                 <div class="col-xl-3 col-lg-6 col-md-6 col-5 ">
                     <div class="s4_item r_corners transition_slow">
-                        <a href="" class="link_on_element"></a>
+                        <a href="#popup_form" link_name="заказать Поставку нерудных материалов"
+                           class="popup link_on_element"></a>
                         <h3 class="h3 s4_item__title">Поставка нерудных материалов </h3>
                         <div class="s4_item__tags">
                             <span class="s4_item__tag description">Песок</span>
@@ -393,7 +339,8 @@
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-4 col-4 ">
                     <div class="s4_item r_corners transition_slow">
-                        <a href="" class="link_on_element"></a>
+                        <a href="#popup_form" link_name="заказать Монтаж детских и спорт площадок"
+                           class="popup link_on_element"></a>
                         <h3 class="h3 s4_item__title">Монтаж детских и спортивных площадок</h3>
                         <div class="s4_item__tags">
                         </div>
@@ -404,7 +351,7 @@
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-4 col-4 ">
                     <div class="s4_item r_corners transition_slow">
-                        <a href="" class="link_on_element"></a>
+                        <a href="#popup_form" link_name="заказать Гидропосев" class="popup link_on_element"></a>
                         <h3 class="h3 s4_item__title">Гидропосев</h3>
                         <div class="s4_item__tags">
                         </div>
@@ -415,7 +362,7 @@
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-4 col-4 ">
                     <div class="s4_item r_corners transition_slow">
-                        <a href="" class="link_on_element"></a>
+                        <a href='#catalog' class="js_scroll link_on_element"></a>
                         <h3 class="h3 s4_item__title">Аренда техники с оператором</h3>
                         <div class="s4_item__tags">
                         </div>
@@ -428,7 +375,7 @@
         </div>
     </section>
 
-    <section class="section section_5">
+    <section id="cases" class="section section_5">
         <div class="container p-0">
             <div class="row">
                 <div class="col-12 mb-2">
@@ -437,7 +384,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-4 col-6">
                     <div class="s5_item">
                         <div class="s5_item__pic r_corners">
-                            <a href="" class="link_on_element"></a>
+                            <a href="#popup_gallery_1" class="popup link_on_element"></a>
                             <div class="s5_item__onHover transition">
                                 <div>
                                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
@@ -468,7 +415,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-4 col-6">
                     <div class="s5_item">
                         <div class="s5_item__pic r_corners">
-                            <a href="" class="link_on_element"></a>
+                            <a href="#popup_gallery_2" class="popup link_on_element"></a>
                             <div class="s5_item__onHover transition">
                                 <div>
                                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
@@ -497,7 +444,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-4 col-12">
                     <div class="s5_item">
                         <div class="s5_item__pic r_corners">
-                            <a href="" class="link_on_element"></a>
+                            <a href="#popup_gallery_3" class="popup link_on_element"></a>
                             <div class="s5_item__onHover transition">
                                 <div>
                                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
@@ -527,7 +474,7 @@
                 <div class="col-xl-3 col-lg-6 col-md-6 col-6">
                     <div class="s5_item">
                         <div class="s5_item__pic r_corners">
-                            <a href="" class="link_on_element"></a>
+                            <a href="#popup_gallery_4" class="popup link_on_element"></a>
                             <div class="s5_item__onHover transition">
                                 <div>
                                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
@@ -556,7 +503,7 @@
                 <div class="col-xl-3 col-lg-6 col-md-6 col-6">
                     <div class="s5_item">
                         <div class="s5_item__pic r_corners">
-                            <a href="" class="link_on_element"></a>
+                            <a href="#popup_gallery_5" class="popup link_on_element"></a>
                             <div class="s5_item__onHover transition">
                                 <div>
                                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
@@ -586,7 +533,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-4 col-12">
                     <div class="s5_item">
                         <div class="s5_item__pic r_corners">
-                            <a href="" class="link_on_element"></a>
+                            <a href="#popup_gallery_6" class="popup link_on_element"></a>
                             <div class="s5_item__onHover transition">
                                 <div>
                                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
@@ -616,7 +563,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-4 col-6">
                     <div class="s5_item">
                         <div class="s5_item__pic r_corners">
-                            <a href="" class="link_on_element"></a>
+                            <a href="#popup_gallery_7" class="popup link_on_element"></a>
                             <div class="s5_item__onHover transition">
                                 <div>
                                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
@@ -645,7 +592,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-4 col-6">
                     <div class="s5_item">
                         <div class="s5_item__pic r_corners">
-                            <a href="" class="link_on_element"></a>
+                            <a href="#popup_gallery_8" class="popup link_on_element"></a>
                             <div class="s5_item__onHover transition">
                                 <div>
                                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
@@ -677,7 +624,7 @@
         </div>
     </section>
 
-    <section class="section section_6">
+    <section id="catalog" class="section section_6">
         <div class="container p-0">
             <div class="row">
                 <div class="col-12 s6_title mb-2">
@@ -809,7 +756,7 @@
         </div>
     </section>
 
-    <section class="section section_7">
+    <section id="" class="section section_7">
         <div class="container p-0">
             <div class="row">
                 <div class="col-12 mb-2">
@@ -864,7 +811,7 @@
         </div>
     </section>
 
-    <section class="section section_8">
+    <section id="" class="section section_8">
         <div class="container p-0">
             <div class="row">
                 <div class="col-12">
@@ -921,7 +868,7 @@
         </div>
     </section>
 
-    <section class="section section_9">
+    <section id="" class="section section_9">
         <div class="container p-0">
             <div class="row">
                 <div class="col-12">
@@ -931,32 +878,32 @@
             <div class="row justify-content-around">
                 <div class="col-xl-2 col-lg-4 col-6">
                     <div class="s9_item r_corners">
-                        <img src="img/diploma-1.png" alt="diploma" class="js_lazy_image">
+                        <img data-src="img/diploma-1.png" alt="diploma" class="js_lazy_image">
                     </div>
                 </div>
                 <div class="col-xl-2 col-lg-4 col-6">
                     <div class="s9_item r_corners">
-                        <img src="img/diploma-2.png" alt="diploma" class="js_lazy_image">
+                        <img data-src="img/diploma-2.png" alt="diploma" class="js_lazy_image">
                     </div>
                 </div>
                 <div class="col-xl-2 col-lg-4 col-6">
                     <div class="s9_item r_corners">
-                        <img src="img/diploma-3.png" alt="diploma" class="js_lazy_image">
+                        <img data-src="img/diploma-3.png" alt="diploma" class="js_lazy_image">
                     </div>
                 </div>
                 <div class="col-xl-2 col-lg-4 col-6">
                     <div class="s9_item r_corners">
-                        <img src="img/diploma-4.png" alt="diploma" class="js_lazy_image">
+                        <img data-src="img/diploma-4.png" alt="diploma" class="js_lazy_image">
                     </div>
                 </div>
                 <div class="col-xl-2 col-lg-4 col-6">
                     <div class="s9_item r_corners">
-                        <img src="img/diploma-5.png" alt="diploma" class="js_lazy_image">
+                        <img data-src="img/diploma-5.png" alt="diploma" class="js_lazy_image">
                     </div>
                 </div>
                 <div class="col-xl-2 col-lg-4 col-6">
                     <div class="s9_item r_corners">
-                        <img src="img/diploma-6.png" alt="diploma" class="js_lazy_image">
+                        <img data-src="img/diploma-6.png" alt="diploma" class="js_lazy_image">
                     </div>
                 </div>
             </div>
@@ -970,19 +917,19 @@
             <div class="footer_logoWrapper"><img src="img/logo_footer.png" alt="Splav"></div>
             <div class="footer_navWrapper">
                 <nav class="footer_nav">
-                    <a href="" class="scroll footer_navLink a transition"><span class="h5">О компании</span></a>
-                    <a href="" class="scroll footer_navLink a transition"><span class="h5">Услуги</span></a>
-                    <a href="" class="scroll footer_navLink a transition"><span
+                    <a href="#about_us" class="js_scroll footer_navLink a transition"><span class="h5">О компании</span></a>
+                    <a href="#services" class="js_scroll footer_navLink a transition"><span class="h5">Услуги</span></a>
+                    <a href="#catalog" class="js_scroll footer_navLink a transition"><span
                             class="h5">Каталог техники</span></a>
-                    <a href="" class="scroll footer_navLink a transition"><span
+                    <a href="#cases" class="js_scroll footer_navLink a transition"><span
                             class="h5">Выполненные контракты</span></a>
-                    <a href="" class="scroll footer_navLink a transition"><span class="h5">Контакты</span></a>
                 </nav>
             </div>
             <div class="footer_phoneWrapper">
                 <div class="footer_phoneNumber"><span class="h3">+7 (999) 150 46-56</span></div>
                 <div class="footer_callButton">
-                    <a href="" class="popup a_accent transition"><span>Заказать звонок</span></a>
+                    <a href="#popup_form" link_name="кнопка Заказать звонок в Подвале сайта"
+                       class="popup a_accent transition"><span>Заказать звонок</span></a>
                 </div>
             </div>
         </div>
@@ -993,7 +940,7 @@
                 <a href="" class="h5 a_accent">Политика конфиденциальности</a>
             </div>
             <div class="footer_col"><p>2021 © Сплав. Все права защищены. </p></div>
-            <div class="footer_col footer_millenium mt-md-0 mt-4">
+            <div class="footer_col footer_millenium">
                 <span class="description">Разработка сайта - </span>
                 <img src="img/millenium.svg" alt="millenium">
             </div>
@@ -1001,5 +948,286 @@
         </div>
     </div>
 </footer>
+
+<div class="popup_windows">
+
+    <div class="popup_window mfp-hide r_corners" id="popup_form">
+        <div class="popup_window__title">
+            <span class="h3">Заказ обратного<br> звонка</span>
+        </div>
+        <form action="" class="js_form form_stretch mt-4">
+            <label for="popup_small_name" class="input_style_1 mb-5 transition_slow">
+                <span>Имя</span>
+                <input type="text" id="popup_small_name" name="name" placeholder="Константин" class="input" required>
+            </label>
+            <label for="popup_small_phone" class="input_style_1 mb-5 transition_slow">
+                <span>Телефон</span>
+                <input type="text" id="popup_small_phone" name="phone" placeholder="+7 (987) 654-32-10" class="input"
+                       required
+                       autocomplete="off">
+            </label>
+            <input type="hidden" value="Форма Заказать звонок" name="where">
+            <input type="submit" value="Заказать звонок" class="button_submit button button_style_1 transition">
+            <p class="description mt-3">Нажимая «Заказать звонок», вы даёте согласие на 
+                <a href="#" class="a transition">обработку персональных данных </a></p>
+        </form>
+    </div>
+
+    <div class="popup_window mfp-hide r_corners" id="js_popup_greeting">
+        <div class="success h3">Спасибо за заявку!</div>
+        <div class="fail h3">Попробуйте позднее</div>
+    </div>
+
+    <div class="popup_window mfp-hide r_corners popup_gallery" id="popup_gallery_1">
+        <div class="jsSliderWr popup_gallery__sliderWr r_corners">
+            <ul class="sliderItems popup_gallery__sliderItems">
+                <li class="sliderItem"><img data-src="img/gallery_1/slider(0).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_1/slider(1).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_1/slider(2).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_1/slider(3).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_1/slider(4).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_1/slider(5).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_1/slider(6).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_1/slider(7).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_1/slider(8).jpg" alt="" class="js_lazy_image_popup"></li>
+            </ul>
+        </div>
+        <div class="popup_gallery_sliderButtons">
+            <button class="jsSliderPrevBtn sliderBtn transition_fast">
+                <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.61924 0.380762C8.12692 0.888443 8.12692 1.71156 7.61924 2.21924L3.33848 6.5L7.61924 10.7808C8.12692 11.2884 8.12692 12.1116 7.61924 12.6192C7.11156 13.1269 6.28844 13.1269 5.78076 12.6192L0.580759 7.41924C0.0730768 6.91156 0.0730773 6.08844 0.580759 5.58076L5.78076 0.380762C6.28844 -0.12692 7.11156 -0.12692 7.61924 0.380762Z"
+                          fill='currentColor'/>
+                </svg>
+            </button>
+            <button class="jsSliderNextBtn sliderBtn transition_fast">
+                <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.61924 0.380762C8.12692 0.888443 8.12692 1.71156 7.61924 2.21924L3.33848 6.5L7.61924 10.7808C8.12692 11.2884 8.12692 12.1116 7.61924 12.6192C7.11156 13.1269 6.28844 13.1269 5.78076 12.6192L0.580759 7.41924C0.0730768 6.91156 0.0730773 6.08844 0.580759 5.58076L5.78076 0.380762C6.28844 -0.12692 7.11156 -0.12692 7.61924 0.380762Z"
+                          fill='currentColor'/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="popup_window mfp-hide r_corners popup_gallery" id="popup_gallery_2">
+        <div class="jsSliderWr popup_gallery__sliderWr r_corners">
+            <ul class="sliderItems popup_gallery__sliderItems">
+                <li class="sliderItem"><img data-src="img/gallery_2/slider(0).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_2/slider(1).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_2/slider(2).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_2/slider(3).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_2/slider(4).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_2/slider(5).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_2/slider(6).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_2/slider(7).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_2/slider(8).jpg" alt="" class="js_lazy_image_popup"></li>
+            </ul>
+        </div>
+        <div class="popup_gallery_sliderButtons">
+            <button class="jsSliderPrevBtn sliderBtn transition_fast">
+                <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.61924 0.380762C8.12692 0.888443 8.12692 1.71156 7.61924 2.21924L3.33848 6.5L7.61924 10.7808C8.12692 11.2884 8.12692 12.1116 7.61924 12.6192C7.11156 13.1269 6.28844 13.1269 5.78076 12.6192L0.580759 7.41924C0.0730768 6.91156 0.0730773 6.08844 0.580759 5.58076L5.78076 0.380762C6.28844 -0.12692 7.11156 -0.12692 7.61924 0.380762Z"
+                          fill='currentColor'/>
+                </svg>
+            </button>
+            <button class="jsSliderNextBtn sliderBtn transition_fast">
+                <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.61924 0.380762C8.12692 0.888443 8.12692 1.71156 7.61924 2.21924L3.33848 6.5L7.61924 10.7808C8.12692 11.2884 8.12692 12.1116 7.61924 12.6192C7.11156 13.1269 6.28844 13.1269 5.78076 12.6192L0.580759 7.41924C0.0730768 6.91156 0.0730773 6.08844 0.580759 5.58076L5.78076 0.380762C6.28844 -0.12692 7.11156 -0.12692 7.61924 0.380762Z"
+                          fill='currentColor'/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="popup_window mfp-hide r_corners popup_gallery" id="popup_gallery_3">
+        <div class="jsSliderWr popup_gallery__sliderWr r_corners">
+            <ul class="sliderItems popup_gallery__sliderItems">
+                <li class="sliderItem"><img data-src="img/gallery_3/slider(0).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_3/slider(1).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_3/slider(2).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_3/slider(3).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_3/slider(4).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_3/slider(5).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_3/slider(6).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_3/slider(7).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_3/slider(8).jpg" alt="" class="js_lazy_image_popup"></li>
+            </ul>
+        </div>
+        <div class="popup_gallery_sliderButtons">
+            <button class="jsSliderPrevBtn sliderBtn transition_fast">
+                <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.61924 0.380762C8.12692 0.888443 8.12692 1.71156 7.61924 2.21924L3.33848 6.5L7.61924 10.7808C8.12692 11.2884 8.12692 12.1116 7.61924 12.6192C7.11156 13.1269 6.28844 13.1269 5.78076 12.6192L0.580759 7.41924C0.0730768 6.91156 0.0730773 6.08844 0.580759 5.58076L5.78076 0.380762C6.28844 -0.12692 7.11156 -0.12692 7.61924 0.380762Z"
+                          fill='currentColor'/>
+                </svg>
+            </button>
+            <button class="jsSliderNextBtn sliderBtn transition_fast">
+                <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.61924 0.380762C8.12692 0.888443 8.12692 1.71156 7.61924 2.21924L3.33848 6.5L7.61924 10.7808C8.12692 11.2884 8.12692 12.1116 7.61924 12.6192C7.11156 13.1269 6.28844 13.1269 5.78076 12.6192L0.580759 7.41924C0.0730768 6.91156 0.0730773 6.08844 0.580759 5.58076L5.78076 0.380762C6.28844 -0.12692 7.11156 -0.12692 7.61924 0.380762Z"
+                          fill='currentColor'/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="popup_window mfp-hide r_corners popup_gallery" id="popup_gallery_4">
+        <div class="jsSliderWr popup_gallery__sliderWr r_corners"gallery_4>
+            <ul class="sliderItems popup_gallery__sliderItems">
+                <li class="sliderItem"><img data-src="img/gallery_4/slider(0).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_4/slider(1).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_4/slider(2).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_4/slider(3).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_4/slider(4).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_4/slider(5).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_4/slider(6).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_4/slider(7).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_4/slider(8).jpg" alt="" class="js_lazy_image_popup"></li>
+            </ul>
+        </div>
+        <div class="popup_gallery_sliderButtons">
+            <button class="jsSliderPrevBtn sliderBtn transition_fast">
+                <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.61924 0.380762C8.12692 0.888443 8.12692 1.71156 7.61924 2.21924L3.33848 6.5L7.61924 10.7808C8.12692 11.2884 8.12692 12.1116 7.61924 12.6192C7.11156 13.1269 6.28844 13.1269 5.78076 12.6192L0.580759 7.41924C0.0730768 6.91156 0.0730773 6.08844 0.580759 5.58076L5.78076 0.380762C6.28844 -0.12692 7.11156 -0.12692 7.61924 0.380762Z"
+                          fill='currentColor'/>
+                </svg>
+            </button>
+            <button class="jsSliderNextBtn sliderBtn transition_fast">
+                <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.61924 0.380762C8.12692 0.888443 8.12692 1.71156 7.61924 2.21924L3.33848 6.5L7.61924 10.7808C8.12692 11.2884 8.12692 12.1116 7.61924 12.6192C7.11156 13.1269 6.28844 13.1269 5.78076 12.6192L0.580759 7.41924C0.0730768 6.91156 0.0730773 6.08844 0.580759 5.58076L5.78076 0.380762C6.28844 -0.12692 7.11156 -0.12692 7.61924 0.380762Z"
+                          fill='currentColor'/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="popup_window mfp-hide r_corners popup_gallery" id="popup_gallery_5">
+        <div class="jsSliderWr popup_gallery__sliderWr r_corners">
+            <ul class="sliderItems popup_gallery__sliderItems">
+                <li class="sliderItem"><img data-src="img/gallery_5/slider(0).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_5/slider(1).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_5/slider(2).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_5/slider(3).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_5/slider(4).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_5/slider(5).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_5/slider(6).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_5/slider(7).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_5/slider(8).jpg" alt="" class="js_lazy_image_popup"></li>
+            </ul>
+        </div>
+        <div class="popup_gallery_sliderButtons">
+            <button class="jsSliderPrevBtn sliderBtn transition_fast">
+                <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.61924 0.380762C8.12692 0.888443 8.12692 1.71156 7.61924 2.21924L3.33848 6.5L7.61924 10.7808C8.12692 11.2884 8.12692 12.1116 7.61924 12.6192C7.11156 13.1269 6.28844 13.1269 5.78076 12.6192L0.580759 7.41924C0.0730768 6.91156 0.0730773 6.08844 0.580759 5.58076L5.78076 0.380762C6.28844 -0.12692 7.11156 -0.12692 7.61924 0.380762Z"
+                          fill='currentColor'/>
+                </svg>
+            </button>
+            <button class="jsSliderNextBtn sliderBtn transition_fast">
+                <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.61924 0.380762C8.12692 0.888443 8.12692 1.71156 7.61924 2.21924L3.33848 6.5L7.61924 10.7808C8.12692 11.2884 8.12692 12.1116 7.61924 12.6192C7.11156 13.1269 6.28844 13.1269 5.78076 12.6192L0.580759 7.41924C0.0730768 6.91156 0.0730773 6.08844 0.580759 5.58076L5.78076 0.380762C6.28844 -0.12692 7.11156 -0.12692 7.61924 0.380762Z"
+                          fill='currentColor'/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="popup_window mfp-hide r_corners popup_gallery" id="popup_gallery_6">
+        <div class="jsSliderWr popup_gallery__sliderWr r_corners">
+            <ul class="sliderItems popup_gallery__sliderItems">
+                <li class="sliderItem"><img data-src="img/gallery_6/slider(0).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_6/slider(1).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_6/slider(2).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_6/slider(3).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_6/slider(4).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_6/slider(5).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_6/slider(6).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_6/slider(7).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_6/slider(8).jpg" alt="" class="js_lazy_image_popup"></li>
+            </ul>
+        </div>
+        <div class="popup_gallery_sliderButtons">
+            <button class="jsSliderPrevBtn sliderBtn transition_fast">
+                <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.61924 0.380762C8.12692 0.888443 8.12692 1.71156 7.61924 2.21924L3.33848 6.5L7.61924 10.7808C8.12692 11.2884 8.12692 12.1116 7.61924 12.6192C7.11156 13.1269 6.28844 13.1269 5.78076 12.6192L0.580759 7.41924C0.0730768 6.91156 0.0730773 6.08844 0.580759 5.58076L5.78076 0.380762C6.28844 -0.12692 7.11156 -0.12692 7.61924 0.380762Z"
+                          fill='currentColor'/>
+                </svg>
+            </button>
+            <button class="jsSliderNextBtn sliderBtn transition_fast">
+                <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.61924 0.380762C8.12692 0.888443 8.12692 1.71156 7.61924 2.21924L3.33848 6.5L7.61924 10.7808C8.12692 11.2884 8.12692 12.1116 7.61924 12.6192C7.11156 13.1269 6.28844 13.1269 5.78076 12.6192L0.580759 7.41924C0.0730768 6.91156 0.0730773 6.08844 0.580759 5.58076L5.78076 0.380762C6.28844 -0.12692 7.11156 -0.12692 7.61924 0.380762Z"
+                          fill='currentColor'/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="popup_window mfp-hide r_corners popup_gallery" id="popup_gallery_7">
+        <div class="jsSliderWr popup_gallery__sliderWr r_corners">
+            <ul class="sliderItems popup_gallery__sliderItems">
+                <li class="sliderItem"><img data-src="img/gallery_7/slider(0).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_7/slider(1).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_7/slider(2).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_7/slider(3).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_7/slider(4).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_7/slider(5).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_7/slider(6).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_7/slider(7).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_7/slider(8).jpg" alt="" class="js_lazy_image_popup"></li>
+            </ul>
+        </div>
+        <div class="popup_gallery_sliderButtons">
+            <button class="jsSliderPrevBtn sliderBtn transition_fast">
+                <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.61924 0.380762C8.12692 0.888443 8.12692 1.71156 7.61924 2.21924L3.33848 6.5L7.61924 10.7808C8.12692 11.2884 8.12692 12.1116 7.61924 12.6192C7.11156 13.1269 6.28844 13.1269 5.78076 12.6192L0.580759 7.41924C0.0730768 6.91156 0.0730773 6.08844 0.580759 5.58076L5.78076 0.380762C6.28844 -0.12692 7.11156 -0.12692 7.61924 0.380762Z"
+                          fill='currentColor'/>
+                </svg>
+            </button>
+            <button class="jsSliderNextBtn sliderBtn transition_fast">
+                <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.61924 0.380762C8.12692 0.888443 8.12692 1.71156 7.61924 2.21924L3.33848 6.5L7.61924 10.7808C8.12692 11.2884 8.12692 12.1116 7.61924 12.6192C7.11156 13.1269 6.28844 13.1269 5.78076 12.6192L0.580759 7.41924C0.0730768 6.91156 0.0730773 6.08844 0.580759 5.58076L5.78076 0.380762C6.28844 -0.12692 7.11156 -0.12692 7.61924 0.380762Z"
+                          fill='currentColor'/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="popup_window mfp-hide r_corners popup_gallery" id="popup_gallery_8">
+        <div class="jsSliderWr popup_gallery__sliderWr r_corners">
+            <ul class="sliderItems popup_gallery__sliderItems">
+                <li class="sliderItem"><img data-src="img/gallery_8/slider(0).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_8/slider(1).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_8/slider(2).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_8/slider(3).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_8/slider(4).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_8/slider(5).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_8/slider(6).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_8/slider(7).jpg" alt="" class="js_lazy_image_popup"></li>
+                <li class="sliderItem"><img data-src="img/gallery_8/slider(8).jpg" alt="" class="js_lazy_image_popup"></li>
+            </ul>
+        </div>
+        <div class="popup_gallery_sliderButtons">
+            <button class="jsSliderPrevBtn sliderBtn transition_fast">
+                <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.61924 0.380762C8.12692 0.888443 8.12692 1.71156 7.61924 2.21924L3.33848 6.5L7.61924 10.7808C8.12692 11.2884 8.12692 12.1116 7.61924 12.6192C7.11156 13.1269 6.28844 13.1269 5.78076 12.6192L0.580759 7.41924C0.0730768 6.91156 0.0730773 6.08844 0.580759 5.58076L5.78076 0.380762C6.28844 -0.12692 7.11156 -0.12692 7.61924 0.380762Z"
+                          fill='currentColor'/>
+                </svg>
+            </button>
+            <button class="jsSliderNextBtn sliderBtn transition_fast">
+                <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.61924 0.380762C8.12692 0.888443 8.12692 1.71156 7.61924 2.21924L3.33848 6.5L7.61924 10.7808C8.12692 11.2884 8.12692 12.1116 7.61924 12.6192C7.11156 13.1269 6.28844 13.1269 5.78076 12.6192L0.580759 7.41924C0.0730768 6.91156 0.0730773 6.08844 0.580759 5.58076L5.78076 0.380762C6.28844 -0.12692 7.11156 -0.12692 7.61924 0.380762Z"
+                          fill='currentColor'/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+</div>
+
 </body>
 </html>

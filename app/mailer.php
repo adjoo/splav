@@ -3,7 +3,7 @@ if (isset($_POST))
 	{
 		header('Content-Type: text/html; charset=utf-8');
 		$recepient = "adjo@ro.ru";
-		$sitename = "VisaTourService";
+		$sitename = "Splav";
 
 	 	if ($_POST["name"]!='') $name = '<p>Имя: '.htmlspecialchars(trim($_POST["name"])).'</p>';
 		if ($_POST["email"]!='') $email = '<p>Почта: '.htmlspecialchars($_POST['email']).'</p>';

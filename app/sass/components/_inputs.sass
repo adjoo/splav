@@ -1,8 +1,15 @@
 //оформление инпутов, чекбоксов, текстовых полей и других полей ввода для форм
 @use "../base/variables" as *
+@use "../base/typography" as *
+
 form
   .description
     max-width: 48ch
+.form_stretch
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: stretch
 
 input[type='text']
   font-size: 1.4em
@@ -26,16 +33,17 @@ input[type='text']
   margin-top: 1em
   margin-bottom: 4em
   span
+    @extend .h3
     position: absolute
-    left: 1em
+    left: .5em
     bottom: 100%
-    font-weight: $fs_med
     line-height: 1
     display: inline-block
     background: $bg
-    padding: 0 6px 6px
-    margin-bottom: -8px
+    padding: 0 .3em .3em
+    margin-bottom: -.75em
     color: $dark_text
+
   input[type='text']
     color: $dark_text
     font-weight: $fs_med
@@ -43,7 +51,7 @@ input[type='text']
       font-weight: $fs_regular
       color: $l_dark
   &:hover
-    border: 1px solid $accent
+    border: 2px solid $accent
 
 
 

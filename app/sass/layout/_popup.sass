@@ -1,13 +1,13 @@
 //стили Выпадающих окон общие и в частности
 @use "../base/variables" as *
-.mfp_popup_window
+.mfp_popup_window //стилизация появления и исчезновения
   .mfp-container
     opacity: 0
     transition: all .2s ease
     transform: scaleY(0.9)
     transform-origin: center
   &.mfp-bg
-    background-color: $bg
+    background-color: $dark
     opacity: 0
     transition: opacity .3s ease 0s
   &.mfp-ready
@@ -17,7 +17,7 @@
       transform-origin: center
       transition: all .2s ease 0s
     &.mfp-bg
-      opacity: 0.6
+      opacity: 0.8
       transition: opacity .3s ease 0s
   &.mfp-removing
     .mfp-container
@@ -25,6 +25,7 @@
       opacity: 0
     &.mfp-bg
       opacity: 0
+
 .popup_window
   position: relative
   margin: auto
@@ -37,9 +38,8 @@
   align-items: center
   background-color: $bg
   padding: 4em
-  border-radius: 2em
   box-shadow: 0em 0em 2em -.5em $l_dark
-  background: url(../img/bg_Form.png) center center no-repeat
+  background: url(../img/popup_bg.png) center center no-repeat
   background-size: cover
   .mfp-close
     display: block
@@ -63,4 +63,30 @@
 
 .popup_window__title
   margin-right: auto
-  margin-bottom: 3em
+  padding-right: 7em
+.popup_gallery
+  width: auto
+  max-width: calc(100% - 6rem)
+  padding: 4em 2em 1em
+  @media (min-width: 992px)
+    max-width: 76em
+  .mfp-close
+    top: .1em
+    right: .1em
+
+.popup_gallery__sliderWr
+  width: 100%
+  &:before
+    display: block
+    content: ''
+    padding-top: 62%!important
+
+  .popup_gallery__sliderItems
+    position: absolute
+    left: 0
+    top: 0
+    height: 100%
+.popup_gallery_sliderButtons
+  display: flex
+  .sliderBtn
+    margin: 1em
