@@ -1,6 +1,12 @@
 $(document).ready(function () {
 
     //lazy image
+    function replaceAttrAndClassOfElement(item, itemSelector, targetAttributeName, sourceAttributeName) {
+        var sourceAttributeValue = item.attr(sourceAttributeName);
+        item.removeAttr(sourceAttributeName);
+        item.removeClass(itemSelector);
+        item.attr(targetAttributeName, sourceAttributeValue);
+    }
     const lazyImageClassName = '.js_lazy_image';
     const lazyImageSrcAttr = 'data-src';
     setTimeout(function(){
@@ -14,10 +20,7 @@ $(document).ready(function () {
             targetPos = $(this).offset().top;
             if (targetPos < winScrollVal) {
                 //сработает когда пользователь доскроллит к элементу с классом .lazy
-                targetAttr = $(this).attr(lazyImageSrcAttr);
-                $(this).removeAttr(lazyImageSrcAttr);
-                $(this).removeClass(lazyImageClassName);
-                $(this).attr('src', targetAttr);
+                replaceAttrAndClassOfElement($(this), lazyImageClassName, 'src', lazyImageSrcAttr)
             }
         });
     });
@@ -62,13 +65,9 @@ $(document).ready(function () {
                 const inputWhereElement = targetPopupForm.find(formWhereInputSelector)[0]; //инпут со значением места вызова формы
                 if (inputWhereElement){inputWhereElement.setAttribute('value' ,placeOfCall)}
 
-                //загружаем lazy-картинки
-                let targetAttr;
+                //загружаем lazy-картинки при открытии окна
                 $(this.container).find(lazyImageInPopupClassName).each(function() {
-                    targetAttr = $(this).attr(lazyImageSrcAttr);
-                    $(this).removeAttr(lazyImageSrcAttr);
-                    $(this).removeClass(lazyImageClassName);
-                    $(this).attr('src', targetAttr);
+                    replaceAttrAndClassOfElement($(this), lazyImageInPopupClassName, 'src', lazyImageSrcAttr)
                 });
 
             },

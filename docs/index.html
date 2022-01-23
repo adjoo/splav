@@ -127,13 +127,13 @@
             <div class="row">
                 <div class="col-xl-6 col-12">
                     <div class="s2_videoWrapper r_corners">
-                        <button class="playVideoButton s2_playVideoButton transition_fast">
+                        <a href="#popup_video" class="popup playVideoButton s2_playVideoButton transition_fast">
                             <svg width="36" height="40" viewBox="0 0 36 40" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path d="M33 14.8039C37 17.1133 37 22.8868 33 25.1962L9 39.0526C5 41.362 1.7832e-06 38.4752 1.9851e-06 33.8564L3.19646e-06 6.14359C3.39836e-06 1.52479 5 -1.36196 9 0.947441L33 14.8039Z"
                                       fill="currentColor"/>
                             </svg>
-                        </button>
+                        </a>
                         <div class="s2_video"><img data-src="img/s2_video_patch.png" alt="" class="js_lazy_image"></div>
                     </div>
                 </div>
@@ -173,7 +173,7 @@
     <section id="" class="section section_3">
         <div class="container p-0">
             <div class="row">
-                <div class="col-xl-3 col-md-6 col-12">
+                <div class="col-xl-3 col-6">
                     <div class="s3_item">
                         <div class="d-flex align-items-center mb-3">
                             <div class="marker marker-s1">
@@ -185,7 +185,7 @@
                             профессий. Мы ценим каждого работника </p>
                     </div>
                 </div>
-                <div class="col-xl-3 col-md-6 col-12">
+                <div class="col-xl-3 col-6">
                     <div class="s3_item">
                         <div class="d-flex align-items-center mb-3">
                             <div class="marker marker-s1">
@@ -196,7 +196,7 @@
                             партнёрами и сотрудниками</p>
                     </div>
                 </div>
-                <div class="col-xl-3 col-md-6 col-12">
+                <div class="col-xl-3 col-6">
                     <div class="s3_item">
                         <div class="d-flex align-items-center mb-3">
                             <div class="marker marker-s1">
@@ -209,7 +209,7 @@
                             отлично работать и весело отдыхать</p>
                     </div>
                 </div>
-                <div class="col-xl-3 col-md-6 col-12">
+                <div class="col-xl-3 col-6">
                     <div class="s3_item">
                         <div class="d-flex align-items-center mb-3">
                             <div class="marker marker-s1">
@@ -956,15 +956,18 @@
             <span class="h3">Заказ обратного<br> звонка</span>
         </div>
         <form action="" class="js_form form_stretch mt-4">
-            <label for="popup_small_name" class="input_style_1 mb-5 transition_slow">
+            <label for="popup_big_name" class="input_style_1 mb-5 transition_slow">
                 <span>Имя</span>
-                <input type="text" id="popup_small_name" name="name" placeholder="Константин" class="input" required>
+                <input type="text" id="popup_big_name" name="name" placeholder="Константин" class="input" required>
             </label>
-            <label for="popup_small_phone" class="input_style_1 mb-5 transition_slow">
+            <label for="popup_big_phone" class="input_style_1 mb-5 transition_slow">
                 <span>Телефон</span>
-                <input type="text" id="popup_small_phone" name="phone" placeholder="+7 (987) 654-32-10" class="input"
-                       required
+                <input type="text" id="popup_big_phone" name="phone" placeholder="+7 (987) 654-32-10" class="input" required
                        autocomplete="off">
+            </label>
+            <label for="popup_big_email" class="input_style_1 mb-5 transition_slow">
+                <span>Email</span>
+                <input type="text" id="popup_big_email" name="email" placeholder="email@mail.ru" class="input" required>
             </label>
             <input type="hidden" value="Форма Заказать звонок" name="where">
             <input type="submit" value="Заказать звонок" class="button_submit button button_style_1 transition">
@@ -1227,6 +1230,13 @@
         </div>
     </div>
 
+    <div class="popup_window mfp-hide r_corners popup_video_wrapper" id="popup_video">
+        <video data-src="video/vesti720.mp4"
+               controls
+               controlsList="nodownload noremoteplayback"
+               preload="metadata"
+               class="r_corners js_lazy_image_popup"></video>
+    </div>
 </div>
 
 </body>
